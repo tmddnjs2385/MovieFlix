@@ -1,6 +1,6 @@
 import React from "react"
 import Home from "../Routes/Home"
-import Detail from "../Routes/Detail"
+//import Detail from "../Routes/Detail"
 import Search from "../Routes/Search"
 import TV from "../Routes/TV"
 
@@ -18,12 +18,13 @@ export default () => (
         <Switch>
 
             <Route path="/" exact component={Home} />
-            <Route path="/Detail" exact component={Detail} />
-            <Route path="/Search" exact component={Search} />
-            <Route path="/TV" exact component={TV} />
+            <Route path="/tv" exact component={TV} />
+            <Route path="/search" exact component={Search} />
+
             <Redirect from="*" to="/" />
 
         </Switch>
+
     </Router>
 
 )
